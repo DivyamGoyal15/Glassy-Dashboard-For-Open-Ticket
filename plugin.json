@@ -14,10 +14,10 @@
     "incompatiblePlugins": ["ot-dashboard"],
 
     "details": {
-        "author": "you",
+        "author": "Divyam Goyal",
         "contributors": [],
-        "shortDescription": "A sexy glassy animated password-protected dashboard",
-        "longDescription": "Customize every aspect of your Open Ticket bot and its plugins through a beautiful glass-morphism dashboard.",
+        "shortDescription": "A animated password-protected dashboard",
+        "longDescription": "Customize every aspect of your Open Ticket bot and its plugins through a dashboard.",
         "imageUrl": "",
         "projectUrl": "",
         "tags": ["dashboard", "glassy", "admin", "config", "customize"]
