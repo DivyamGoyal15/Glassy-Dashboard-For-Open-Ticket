@@ -1,0 +1,25 @@
+{
+    "name": "Glassy Dashboard",
+    "id": "ot-glassy-dashboard",
+    "version": "1.0.0",
+    "startFile": "index.ts",
+    "supportedVersions": ["OTv4.0.x", "OTv4.1.x", "OTv4.2.x"],
+
+    "enabled": true,
+    "priority": 0,
+    "events": [],
+
+    "npmDependencies": [],
+    "requiredPlugins": [],
+    "incompatiblePlugins": ["ot-dashboard"],
+
+    "details": {
+        "author": "you",
+        "contributors": [],
+        "shortDescription": "A sexy glassy animated password-protected dashboard",
+        "longDescription": "Customize every aspect of your Open Ticket bot and its plugins through a beautiful glass-morphism dashboard.",
+        "imageUrl": "",
+        "projectUrl": "",
+        "tags": ["dashboard", "glassy", "admin", "config", "customize"]
+    }
+}

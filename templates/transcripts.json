@@ -1,0 +1,35 @@
+{
+    "general": {
+        "enabled": true,
+        "enableChannel": true,
+        "enableCreatorDM": true,
+        "enableParticipantDM": false,
+        "enableActiveAdminDM": false,
+        "enableEveryoneTextTranscript": true,
+        "channel": "<CHANGE_ME_TRANSCRIPT_CHANNEL_ID>",
+        "mode": "html"
+    },
+    "embedSettings": {
+        "customColor": "",
+        "listAllParticipants": false,
+        "includeTicketStats": false
+    },
+    "textTranscriptStyle": {
+        "layout": "simple",
+        "includeStats": true,
+        "includeIds": true,
+        "includeEmbeds": true,
+        "includeFiles": true,
+        "includeBotMessages": true,
+
+        "fileMode": "txt",
+
+        "customHeader": ""
+    },
+    "htmlTranscriptStyle": {
+        "background": { "enableCustomBackground": false, "backgroundColor": "", "backgroundImage": "" },
+        "header": { "enableCustomHeader": false, "backgroundColor": "", "decoColor": "", "textColor": "" },
+        "stats": { "enableCustomStats": false, "backgroundColor": "", "keyTextColor": "", "valueTextColor": "", "hideBackgroundColor": "", "hideTextColor": "" },
+        "favicon": { "enableCustomFavicon": false, "imageUrl": "" }
+    }
+}

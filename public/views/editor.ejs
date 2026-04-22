@@ -1,0 +1,17 @@
+<%- include('partials/header') %>
+
+<div class="page-header">
+    <h1>📝 Editing: <%= fileName %></h1>
+    <p>Edit the JSON below and hit save. <kbd>Ctrl</kbd> + <kbd>S</kbd> to save instantly!</p>
+</div>
+
+<div class="editor-wrap glass">
+    <textarea id="editor" spellcheck="false" data-save-url="<%= saveUrl %>"><%= fileContent %></textarea>
+    <div class="editor-actions">
+        <button class="btn" onclick="saveConfig('<%= saveUrl %>')">💾 Save <span class="kbd-hint">Ctrl+S</span></button>
+        <button class="btn ghost" onclick="formatJson()">✨ Format JSON</button>
+        <a href="/" class="btn ghost">← Back</a>
+    </div>
+</div>
+
+<%- include('partials/footer') %>

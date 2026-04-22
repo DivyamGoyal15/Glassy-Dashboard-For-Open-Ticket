@@ -1,0 +1,5 @@
+{
+    "commandPermission": "admin",
+    "autoResendOnBoot": false,
+    "deleteStickyMessageWhenDisabled": true
+}

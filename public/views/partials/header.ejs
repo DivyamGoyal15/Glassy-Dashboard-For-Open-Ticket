@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><%= title %></title>
+
+    <link rel="icon" type="image/png" href="/favicon.ico?v=<%= Date.now() %>">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Fira+Code&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <style>
+        :root {
+            --primary: <%= theme.primaryColor %>;
+            --secondary: <%= theme.secondaryColor %>;
+            --accent: <%= theme.accentColor %>;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Custom cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-ring"></div>
+
+    <!-- Hover trigger zone for sidebar -->
+    <div class="sidebar-hover-zone" id="sidebar-hover-zone"></div>
+
+    <!-- Sidebar overlay -->
+    <div class="sidebar-overlay" id="sidebar-overlay"></div>
+
+    <!-- Sidebar toggle button -->
+    <button class="sidebar-toggle" id="sidebar-toggle" title="Toggle Menu">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+    </button>
+
+    <div class="app">
+        <aside class="sidebar glass" id="sidebar">
+            <div class="logo">✨ <%= title %></div>
+
+            <a href="/" class="nav-item <%= page==='dashboard'?'active':'' %>">
+                <span class="icon">🏠</span> Dashboard
+            </a>
+
+            <% if (features.editGeneralConfig) { %>
+                <a href="/config/general" class="nav-item <%= page==='general'?'active':'' %>">
+                    <span class="icon">⚙️</span> General
+                </a>
+            <% } %>
+
+            <% if (features.editPanels) { %>
+                <a href="/config/panels" class="nav-item <%= page==='panels'?'active':'' %>">
+                    <span class="icon">📋</span> Panels
+                </a>
+            <% } %>
+
+            <% if (features.editOptions) { %>
+                <a href="/config/options" class="nav-item <%= page==='options'?'active':'' %>">
+                    <span class="icon">🎫</span> Options
+                </a>
+            <% } %>
+
+            <% if (features.editQuestions) { %>
+                <a href="/config/questions" class="nav-item <%= page==='questions'?'active':'' %>">
+                    <span class="icon">❓</span> Questions
+                </a>
+            <% } %>
+
+            <% if (features.editTranscripts) { %>
+                <a href="/config/transcripts" class="nav-item <%= page==='transcripts'?'active':'' %>">
+                    <span class="icon">📜</span> Transcripts
+                </a>
+            <% } %>
+
+            <% if (features.managePlugins) { %>
+                <a href="/plugins" class="nav-item <%= page==='plugins'?'active':'' %>">
+                    <span class="icon">🧩</span> Plugins
+                </a>
+            <% } %>
+
+            <div class="sidebar-footer">
+                <a href="/logout" class="nav-item">
+                    <span class="icon">🚪</span> Logout
+                </a>
+            </div>
+        </aside>
+
+        <main class="main">

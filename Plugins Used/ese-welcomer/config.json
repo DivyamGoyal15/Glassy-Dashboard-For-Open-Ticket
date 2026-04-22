@@ -1,0 +1,36 @@
+{
+  "welcomeChannelId": "1493610040790220852",
+  "testTitle": "Welcome!\n\n",
+  "messageContent": "Welcome {user} to {server}!",
+  "embed": {
+    "color": "#ffffff",
+    "title": "New Member!",
+    "description": "Welcome {user}, we are glad to have you here!",
+    "footer": "ESE Welcomer",
+    "thumbnail": "user-icon",
+    "image": "",
+    "timestamp": true,
+    "author": {
+      "name": "Welcome",
+      "icon": "",
+      "url": ""
+    }
+  },
+  "leaveChannelId": "YOUR_CHANNEL_ID_HERE",
+  "leaveTestTitle": "Goodbye!\n\n",
+  "leaveMessageContent": "{user} has left the server.",
+  "leaveEmbed": {
+    "color": "#ff0000",
+    "title": "Member Left",
+    "description": "Goodbye {user}, we hope to see you back soon!",
+    "footer": "ESE Welcomer",
+    "thumbnail": "user-icon",
+    "image": "",
+    "timestamp": true,
+    "author": {
+      "name": "Goodbye",
+      "icon": "",
+      "url": ""
+    }
+  }
+}

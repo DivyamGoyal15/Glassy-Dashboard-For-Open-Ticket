@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+
+<div class="page-header">
+    <h1>🧩 Plugins</h1>
+    <p>Manage and configure every plugin installed in your bot</p>
+</div>
+
+<div class="plugin-grid">
+    <% plugins.forEach((p, i) => { %>
+        <div class="plugin-card glass" style="animation-delay: <%= i * 0.05 %>s">
+            <h3><%= p.name %></h3>
+            <span class="version">v<%= p.version %></span>
+            <p class="desc"><%= p.description || 'No description' %></p>
+            <span class="badge <%= p.enabled ? 'on' : 'off' %>"><%= p.enabled ? 'ENABLED' : 'DISABLED' %></span>
+            <div style="margin-top: 15px;">
+                <% if (p.hasConfig) { %>
+                    <a href="/plugin/<%= p.folder %>" class="btn">⚙️ Configure</a>
+                <% } else { %>
+                    <span style="color: var(--text-dim); font-size: 0.85rem">No config file</span>
+                <% } %>
+            </div>
+        </div>
+    <% }); %>
+</div>
+
+<%- include('partials/footer') %>

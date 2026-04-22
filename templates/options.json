@@ -1,0 +1,91 @@
+[
+    {
+        "id": "general-support",
+        "name": "General Support",
+        "description": "Get help with general questions",
+        "type": "ticket",
+        "button": { "emoji": "💬", "label": "General Support", "style": "gray" },
+        "ticket": {
+            "admins": ["<CHANGE_ME_ADMIN_ROLE_ID>"],
+            "readonlyAdmins": [],
+            "allowCreationByBlacklistedUsers": false,
+            "questions": [],
+            "channel": {
+                "prefix": "ticket-",
+                "suffix": "user-name",
+                "category": "<CHANGE_ME_CATEGORY_ID>",
+                "closedCategory": "",
+                "backupCategory": "",
+                "claimedCategory": [],
+                "description": "Support ticket"
+            },
+            "dmMessage": {
+                "enabled": true,
+                "text": "Thanks for opening a ticket! We'll be with you soon.",
+                "embed": {
+                    "enabled": true,
+                    "title": "Ticket Opened",
+                    "description": "Your ticket has been created successfully!",
+                    "customColor": "",
+                    "image": "",
+                    "thumbnail": "",
+                    "fields": [],
+                    "timestamp": true
+                }
+            },
+            "ticketMessage": {
+                "enabled": true,
+                "text": "",
+                "embed": {
+                    "enabled": true,
+                    "title": "Welcome!",
+                    "description": "Please describe your issue and wait for a staff member.",
+                    "customColor": "",
+                    "image": "",
+                    "thumbnail": "",
+                    "fields": [],
+                    "timestamp": true
+                },
+                "ping": { "@here": true, "@everyone": false, "custom": [] }
+            }
+        }
+    },
+    {
+        "id": "bug-report",
+        "name": "Bug Report",
+        "description": "Report a bug",
+        "type": "ticket",
+        "button": { "emoji": "🐛", "label": "Report a Bug", "style": "red" },
+        "ticket": {
+            "admins": ["<CHANGE_ME_ADMIN_ROLE_ID>"],
+            "readonlyAdmins": [],
+            "allowCreationByBlacklistedUsers": false,
+            "questions": [],
+            "channel": {
+                "prefix": "bug-",
+                "suffix": "user-name",
+                "category": "<CHANGE_ME_CATEGORY_ID>",
+                "closedCategory": "",
+                "backupCategory": "",
+                "claimedCategory": [],
+                "description": "Bug report"
+            },
+            "dmMessage": { "enabled": false, "text": "", "embed": { "enabled": false, "title": "", "description": "", "customColor": "", "image": "", "thumbnail": "", "fields": [], "timestamp": false } },
+            "ticketMessage": {
+                "enabled": true,
+                "text": "",
+                "embed": {
+                    "enabled": true,
+                    "title": "🐛 Bug Report",
+                    "description": "Please describe the bug in detail.",
+                    "customColor": "#f87171",
+                    "image": "",
+                    "thumbnail": "",
+                    "fields": [],
+                    "timestamp": true
+                },
+                "ping": { "@here": false, "@everyone": false, "custom": [] }
+            }
+        }
+    }
+]

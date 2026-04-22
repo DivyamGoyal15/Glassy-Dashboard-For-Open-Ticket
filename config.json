@@ -1,0 +1,24 @@
+{
+    "enabled": true,
+    "port": 3000,
+    "host": "0.0.0.0",
+    "password": "divyamgoyal15",
+    "sessionSecret": "9f4b2c8a7d6e1f0b3a9c5e8d2f7a1b6c4e0d9a3f8c2b7e1d6f0a9c5b3e8d2f1a",
+    "siteTitle": "Ticket Bot Dashboard",
+    "theme": {
+        "primaryColor": "#a78bfa",
+        "secondaryColor": "#f472b6",
+        "accentColor": "#60a5fa",
+        "backgroundGradient": ["#0f0c29", "#302b63", "#24243e"]
+    },
+    "features": {
+        "editGeneralConfig": true,
+        "editPanels": true,
+        "editOptions": true,
+        "editQuestions": true,
+        "editTranscripts": true,
+        "viewStats": true,
+        "managePlugins": true,
+        "rawJsonEditor": true
+    }
+}

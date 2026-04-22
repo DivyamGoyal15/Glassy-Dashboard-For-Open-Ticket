@@ -1,0 +1,71 @@
+<%- include('partials/header') %>
+
+<div class="top-bar">
+    <div class="page-header" style="margin-bottom: 0;">
+        <h1>🏠 Dashboard</h1>
+        <p>Welcome back! Here's a snapshot of your bot.</p>
+    </div>
+</div>
+
+<% if (missingSetup && missingSetup.length > 0) { %>
+<div class="setup-banner glass">
+    <h2>🚀 Welcome! Let's set up your bot</h2>
+    <p>These config files are empty or missing. Click a button to create them with beginner-friendly templates:</p>
+
+    <div class="setup-grid">
+        <% missingSetup.forEach(file => { %>
+            <button class="btn setup-btn" onclick="applyTemplate('<%= file %>')">
+                📝 Create <%= file %>.json
+            </button>
+        <% }); %>
+    </div>
+
+    <p class="setup-hint">
+        💡 After applying, edit each file to replace <code>&lt;CHANGE_ME_*&gt;</code> with your own Discord IDs.
+    </p>
+</div>
+<% } %>
+
+<div class="stats-grid" id="live-stats">
+    <div class="stat-card glass">
+        <div class="icon">🏰</div>
+        <div class="label">Guilds</div>
+        <div class="value"><%= stats.guilds %></div>
+    </div>
+
+    <div class="stat-card glass">
+        <div class="icon">👥</div>
+        <div class="label">Users</div>
+        <div class="value"><%= stats.users %></div>
+    </div>
+
+    <div class="stat-card glass">
+        <div class="icon">📡</div>
+        <div class="label">Ping</div>
+        <div class="value" id="stat-ping"><%= stats.ping %>ms</div>
+    </div>
+
+    <div class="stat-card glass">
+        <div class="icon">💾</div>
+        <div class="label">Memory</div>
+        <div class="value" id="stat-memory"><%= stats.memory %>MB</div>
+    </div>
+
+    <div class="stat-card glass">
+        <div class="icon">⏱️</div>
+        <div class="label">Uptime</div>
+        <div class="value" id="stat-uptime">
+            <%= Math.floor(stats.uptime/3600) %>h
+            <%= Math.floor((stats.uptime%3600)/60) %>m
+        </div>
+    </div>
+</div>
+
+<div class="quickstart-section">
+    <p>Ready to configure your bot? Jump right in.</p>
+    <a href="/config/general" class="btn-quickstart">
+        🚀 Quick Start Setup
+    </a>
+</div>
+
+<%- include('partials/footer') %>

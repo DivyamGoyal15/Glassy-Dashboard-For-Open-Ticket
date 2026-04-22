@@ -1,0 +1,22 @@
+{
+  "name": "Welcome Message by Eseclick",
+  "id": "ese-welcomer",
+  "version": "2.0.0",
+  "startFile": "index.ts",
+  "supportedVersions": ["OTv4.0.x","OTv4.1.x","OTv4.2.x"],
+  "enabled": false,
+  "priority": 0,
+  "events": [],
+  "npmDependencies": [],
+  "requiredPlugins": [],
+  "incompatiblePlugins": [],
+  "details": {
+    "author": "Eseclick",
+    "contributors": [],
+    "shortDescription": "Simple welcome embed plugin for Open Ticket",
+    "longDescription": "Sends a welcome embed in a channel when players join your server.",
+    "imageUrl": "",
+    "projectUrl": "",
+    "tags": ["welcome"]
+  }
+}

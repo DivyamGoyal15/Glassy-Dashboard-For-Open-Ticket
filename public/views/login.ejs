@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Login - <%= title %></title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        :root {
+            --primary: <%= theme.primaryColor %>;
+            --secondary: <%= theme.secondaryColor %>;
+            --accent: <%= theme.accentColor %>;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-wrap">
+        <div class="login-card glass">
+            <h1>✨ Welcome Back</h1>
+            <p>Enter your password to manage your bot</p>
+            <% if (error) { %>
+                <div class="error-msg">❌ Wrong password, try again</div>
+            <% } %>
+            <form method="POST" action="/login">
+                <input type="password" name="password" placeholder="🔒 Password" required autofocus>
+                <button type="submit" class="btn full">Login →</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+{
+    "close":{
+        "enableCustomisation":true,
+        "customLabel":"Close Ticket",
+        "customColor":"gray",
+        "customEmoji":"<:lock:1493854964802392094>"
+    },
+    "reopen":{
+        "enableCustomisation":true,
+        "customLabel":"Reopen Ticket",
+        "customColor":"gray",
+        "customEmoji":"<:unlock:1493854951779205120>"
+    },
+    "delete":{
+        "enableCustomisation":true,
+        "customLabel":"Delete Ticket",
+        "customColor":"gray",
+        "customEmoji":"<:66704trash:1481160979961352395>"
+    },
+    "claim":{
+        "enableCustomisation":true,
+        "customLabel":"Claim Ticket",
+        "customColor":"gray",
+        "customEmoji":"<:claim:1493855803420184666>"
+    },
+    "unclaim":{
+        "enableCustomisation":true,
+        "customLabel":"Unclaim Ticket",
+        "customColor":"gray",
+        "customEmoji":"<:unclaim:1493856387523149965>"
+    },
+    "pin":{
+        "enableCustomisation":false,
+        "customLabel":"Pin Ticket",
+        "customColor":"gray",
+        "customEmoji":"📌"
+    },
+    "unpin":{
+        "enableCustomisation":true,
+        "customLabel":"Unpin Ticket",
+        "customColor":"gray",
+        "customEmoji":"📌"
+    },
+    "withReason":{
+        "enableCustomisation":true,
+        "customLabel":"With Reason",
+        "customColor":"gray",
+        "customEmoji":"<:reason:1493857084481998858>"
+    },
+    "withoutTranscript":{
+        "enableCustomisation":true,
+        "customLabel":"Without Transcript",
+        "customColor":"gray",
+        "customEmoji":"<:transcript:1493859142086033559>"
+    },
+    "verifybarSuccess":{
+        "enableCustomisation":true,
+        "customLabel":"",
+        "customColor":"gray",
+        "customEmoji":"<:yes:1493859481287659652>"
+    },
+    "verifybarFailure":{
+        "enableCustomisation":true,
+        "customLabel":"",
+        "customColor":"gray",
+        "customEmoji":"<:no:1493859483883933767>"
+    }
+}

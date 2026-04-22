@@ -1,0 +1,29 @@
+{
+    "webhookUrl":"https://discord.com/api/webhooks/1493846223231123556/Z2lf7uOBLjJzFoEOTPykOWXhWAfYYuPxO8i-8LedsRf6s0emtr3ceg4shknuusvPYTO6",
+    "questionsText":"Thank you for using our ticket system! We would love to hear your feedback!",
+    "completedText":"Your feedback has been received. Thank you for your answers!",
+    "ignoredText":"No answers have been provided. All questions have been asked.",
+    "canceledText":"You didn't respond in time for this question! Moving on to the next one.",
+    
+    "customColor":"",
+    "footer":"Please answer the questions above!",
+
+    "trigger":"delete",
+    "minutesPerQuestion":2,
+    "sendWebhookWhenEmpty":false,
+    
+    "questions":[
+        {
+            "type":"rating",
+            "label":"Please rate your experience from 1-10."
+        },
+        {
+            "type":"text",
+            "label":"What did you like the most?"
+        },
+        {
+            "type":"text",
+            "label":"Which Crew Member helped you the most? (Please provide their name or ID)"
+        }
+    ]   
+}

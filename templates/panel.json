@@ -1,0 +1,34 @@
+[
+    {
+        "id": "main-panel",
+        "name": "Main Support Panel",
+        "dropdown": false,
+        "options": ["general-support", "bug-report"],
+        "text": "# 🎫 Open a Ticket\nClick a button below to create a ticket with our team!",
+        "embed": {
+            "enabled": true,
+            "title": "Support Tickets",
+            "description": "Need help? Pick a category below and we'll be with you shortly.",
+            "color": "#a78bfa",
+            "url": "",
+            "image": "",
+            "thumbnail": "",
+            "footer": "Ticket System",
+            "timestamp": false,
+            "fields": [],
+            "authorName": "",
+            "authorUrl": "",
+            "authorImage": ""
+        },
+        "settings": {
+            "dropdownPlaceholder": "Select a ticket type...",
+            "enableMaxTicketsWarningInText": true,
+            "enableMaxTicketsWarningInEmbed": true,
+            "describeOptionsLayout": "simple",
+            "describeOptionsCustomTitle": "",
+            "describeOptionsInText": false,
+            "describeOptionsInEmbedFields": false,
+            "describeOptionsInEmbedDescription": false
+        }
+    }
+]
