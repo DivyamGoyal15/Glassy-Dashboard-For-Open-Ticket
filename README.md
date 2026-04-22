@@ -1,6 +1,6 @@
 # ✨ OT Glassy Dashboard
 
-A **password-protected**, fully animated, glass-morphism web dashboard for [Open Ticket](https://github.com/open-discord-bots/open-ticket) bot. Customize every aspect of your bot and all its plugins through a beautiful aesthetic interface.
+A **password-protected**, fully animated, glass-morphism web dashboard for [Open Ticket](https://github.com/open-discord-bots/open-ticket) bot. Customize every aspect of your bot and all its plugins through Dashboard
 
 ![License](https://img.shields.io/badge/license-MIT-60a5fa)
 
